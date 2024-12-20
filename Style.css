@@ -1,0 +1,180 @@
+@import url('https://font.googleapis.com/css2?family=Poppins:wght@300;400:500;600;700;800;900 display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0000;
+}
+
+.wrapper {
+    position: relative;
+    position: 400px;
+    height: 500px;
+    background: #000;
+    box-shadow: 0 0 50px #000;
+    box-shadow: 0 0 50px #0ef;
+    border-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+}
+.wrapper:hover {
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.from-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+}
+
+.wrapper.active .from-wrapper.sign-in {
+    transform: translateY(-450px);
+}
+
+.wrapper.active .from-wrapper.sign-in {
+    position: absolute;
+    top: 450px;
+    left: 0;
+}
+
+.wrapper.active .from-wrapper.sign-up {
+    transform: translateY(-450px);
+}
+
+
+h2 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.input-grup{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-grup label{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 5s;
+}
+
+.input-grup input{
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-grup input:focus~label,
+.input-grup input:valid~label {
+    top: -5px;
+}
+
+.remeber{
+    margin: -5px 0 15px 5px;
+}
+
+.remeber label {
+    color: #fff;
+    font-size: 14px;
+}
+
+.remeber label input{
+   accent-color: #0ef;
+}
+
+
+button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.signup-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.signup-link p{
+    color: #fff;
+}
+
+.signup-link p a {
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-link p a:hover {
+    text-decoration: underline;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('sweet.gif');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:2000px; }
+to {background-position: -100px 0px;background-size:1000px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:2000px; }
+to {background-position: -100px 0px;background-size:1000px;}
+
+}
+
